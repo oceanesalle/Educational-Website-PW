@@ -7,6 +7,9 @@ import About from "./components/about/About"
 import CourseHome from "./components/allcourses/CourseHome"
 import Team from "./components/team/Team"
 import Pricing from "./components/pricing/Pricing"
+import Blog from "./components/blog/Blog"
+import Contact from "./components/contact/Contact"
+import Footer from "./components/common/footer/Footer"
 
 function App() {
   return (
@@ -19,7 +22,11 @@ function App() {
         <Route exact path='/courses' component={CourseHome} />
         <Route exact path='/team' component={Team} />
         <Route exact path='/pricing' component={Pricing} />
+        <Route exact path='/pricing' component={Pricing} />
+          <Route exact path='/journal' component={Blog} />
+          <Route exact path='/contact' component={Contact} />
         </Routes>
+        <Footer/>
     </Router>
        
 
